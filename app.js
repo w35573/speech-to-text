@@ -11,7 +11,6 @@ recognition.interimResults = true;
 let p = document.createElement('p');
 
 recognition.addEventListener('result', (e) => {
-    texts.appendChild(p);
     
     const text = Array.from(e.results)
         .map(result => result[0])
@@ -19,7 +18,8 @@ recognition.addEventListener('result', (e) => {
         .join('');
 
     p.innerText = text;
-
+    texts.appendChild(p);
+    
     //iff isFinal is true then our current process has ended so to get results of new process we check whether current process has finished or not if it is finished then we create a new paragraph element
     if (e.results[0].isFinal) {
         p = document.createElement('p');
