@@ -5,17 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speech-to-Text</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/mystyle.css"> -->
+  
+  
+  
+    <script src="https://kit.fontawesome.com/a658a7b479.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <script src="https://kit.fontawesome.com/a658a7b479.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/logo2.png">
 </head>
 <body>
-    <section>
-        <h1>Speech<br>Recognition</h1>
+
+    <nav class="navbar navbar-dark  navbar-expand-md fixed-top">
         <div class="container">
+          <!-- Brand -->
+          <a class="navbar-brand" href="index.html">ExpressAbled</a>
+    
+          <!-- Toggler/collapsible Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link " href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ASL-to-Text</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Image Captioning</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active" href="#">Speech-to-Text</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <section>
+        <!-- <h1>Speech<br>Recognition</h1> -->
+        <h1>
+          <!-- DON'T HIDE -->
+          <span>DON'T HIDE</span>
+          <span>DON'T HIDE</span>
+          <span>Speak out</span>
+
+        </h1>
+        <div class="container-text">
             <div class="texts">
             </div>
         </div>
     </section>
 
+    <div class="speech-bubble" id="speech-bubble-one">
+      
+    </div>
+    <!-- <img src="images/speechbubble1.png" class="speech-bubble" id="speech-bubble-2">
+    <img src="images/speechbubble1.png" class="speech-bubble" id="speech-bubble-3"> -->
     <script src="app.js"></script>
+      <!-- jquery js -->
+  <script src="js/jquery.min.js"></script>
+  <!-- popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- owl carousel js -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- ScrollIt js -->
+  <script src="js/scrollIt.min.js"></script>
+  <!-- main js -->
+
 </body>
 </html>

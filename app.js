@@ -22,10 +22,17 @@ recognition.addEventListener('result', (e) => {
     
     //iff isFinal is true then our current process has ended so to get results of new process we check whether current process has finished or not if it is finished then we create a new paragraph element
     if (e.results[0].isFinal) {
-        p = document.createElement('p');
-    }
 
-    // console.log(text);
+
+        p = document.createElement('p');
+        
+    }
+//     var msg = new SpeechSynthesisUtterance();
+// msg.text = text;
+// window.speechSynthesis.speak(msg);
+    
+
+    console.log(typeof text);
 });
 
 recognition.addEventListener('end', () => {
